@@ -14,7 +14,7 @@ function hello(){
 function change_text(change_id,change_word){
   document.getElementById(change_id).textContent=change_word;
 }
-
+//
 function plus() {
   var n1 = document.getElementById('number1').value;
   var n2 = document.getElementById('number2').value;
