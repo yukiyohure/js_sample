@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+  </head>
+  <body>
+    JavaScript
+    <div>
+      <input type="button" value="アラート" onclick="hello();">
+    </div>
+    <!-- 以下2行追加 -->
+    <p id="change_name">名前</p>
+    <input type="button" value="書き換え" onclick="change_text('change_name','名前書き換えました！');">
+    <p id="change_msg">メッセージ</p>
+    <input type="button" value="書き換え" onclick="change_text('change_msg','メッセージ書き換えました');">
+    <br>
+    <!-- 以下3行追加 -->
+    <input type="text" id="number1">
+    <input type="text" id="number2">
+    <input type="button" value="足し算" onclick="var res = plus();document.getElementById('plusanswer').value = res;">
+    <br>
+    足し算結果
+    <input type="text" id="plusanswer">
+
+    <script src="script.js"></script>
+  </body>
+</html>
